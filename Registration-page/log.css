@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    background: #222;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    background-color: whitesmoke;
+}
+  
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
+  
+.logo {
+    width: 12%;
+    height: 8%;
+    float: left;
+    padding: 10px 0;
+}
+  
+header {
+   background: #e9edc9; 
+}
+  
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+  
+nav {
+    float: right;
+}
+  
+nav li{
+    display: inline-block;
+    margin-left: 30px;
+    padding-top: 25px;
+  
+    position: relative;
+}
+  
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+  
+nav a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+  
+nav a:hover {
+    color: #000;
+}
+  
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #444;
+  
+    position: absolute;
+    top: 0;
+    width: 0%;
+  
+    transition: all ease-in-out 250ms;
+}
+  
+nav a:hover::before {
+    width: 100%;
+}
+  
+* {box-sizing: border-box}
+  
+.container2 {
+    padding: 16px;
+}
+  
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: 1px  solid #55d6aa;
+    background: whitesmoke;
+}
+  
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+  
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+  
+.loginbtn {
+    background-color: #e9edc9;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+  
+.loginbtn:hover {
+    opacity:1;
+}
+  
+a {
+    color: darkmagenta;
+}
+  
+.signin {
+    background-color: whitesmoke;
+    text-align: center;
+}
+  
+.button1 {
+    position: below;
+    top:50%;
+    background-color:cadetblue;
+    color: #fff;
+    border:none;
+    border-radius:40px;
+    padding:15px;
+    min-height:30px; 
+    min-width: 120px;
+}
