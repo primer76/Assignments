@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="./style2.css">
 </head>
 
 <body>
   <header>
-    <div class="container">
+   <div class="container">
       <img src="./Andy's (1).jpg" alt="logo" class="logo">
 
       <nav>
@@ -26,13 +27,13 @@
             </a>
           </li>
           <li>
-            <a href="#Projects">
-              Projects
+            <a href="#">
+              Services
             </a>
           </li>
           <li>
-            <a href="#Services">
-              Services
+            <a href="#">
+              Projects
             </a>
           </li>
         </ul>
@@ -40,125 +41,33 @@
     </div>
   </header>
   <main>
-    
-    <fieldset>
-      <img src="./Anna.jpg" class="container4">
-      <legend>
-        <h2>
-        About me
-        </h2>
-      </legend>
+    <form action="action_page.php">
+      <div class="container4">
+          <legend>
+            <h2>Contact</h2>
+          </legend>
+        
+          <p>Please fill in the form details below.</p>
+          <hr>
   
-      <p>
-        Here you'll find information about me, what i do and my current skills
-      </p>
+          <label for="fName"><b>Full Name</b></label>
+          <input type="text" placeholder="Enter your Full Name" name="fullName" required>
   
-      <h2>
-        Get to know me!
-      </h2>
-      <p>
-        Hello! My name is Ogedegbe Ovie Anderson, you can also call me StyleKing. I'm a web developer currently undergoing
-        training with The Zuri Team and Ingressive 4 Good. I'm a student of the great University of Ilorin, studying
-        Mechanical Engineering.
-      </p>
-    </fieldset>
-  
-    <fieldset>
-      <legend>
-        <h2 id="Hobbies">
-          Hobbies
-        </h2>
-      </legend>
-  
-      <ul class="ul2">
-        <li>
-          I love playing football.
-        </li>
-        <li>
-          I love playing basketball.
-        </li>
-        <li>
-          I love playing reading.
-        </li>
-        <li>
-          I love listening to music.
-        </li>
-      </ul>
-  
-      <h2>
-        Priorites
-      </h2>
-  
-      <ul class="ul2">
-        <li>
-          To finish The Zuri Team's training
-        </li>
-        <li>
-          To make new friends and connect with people
-        </li>
-        <li>
-          I want to get my Permanent voters card
-        </li>
-        <li>
-          I want to also learn how to drive
-        </li>
-      </ul>
-    </fieldset>
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
 
-    <fieldset>
-      <legend>
-        <h2 id="Projects">
-          Projects
-        </h2>
-      </legend>
-
-      <p>
-        Find all the projects i have done below.
-      </p>
-
-      <section class="sec1">
-        <figure>
-          <a href="https://codepen.io/Styleking78/pen/jOxpPMb">
-            <img src="./Benedict.jpg" alt="Benedict" title="Table Project">
+          <label for="message"><b>Message</b></label>
+          <textarea id="message" name="message" rows="10" cols="10" placeholder="Write your message here..."></textarea>
+  
+          <hr>
+  
+          <a href="./index.html">
+            <button type="button" class="SendButton">Send</button>
           </a>
-          
-          <figcaption>
-            Table Project From Team Zuri
-          </figcaption>
-        </figure>
-      </section>
+      </div>
 
-      <section class="sec2">
-        <figure>
-          <a href="https://codepen.io/Styleking78/pen/PoeBaLo">
-            <img src="./Tribute.jpg" alt="Tribute" title="Tribute Page">
-          </a>
-          <figcaption>
-            Tribute page for Dele Giwa. 
-          </figcaption>
-        </figure>
-      </section>
-    </fieldset>
 
-      <fieldset>
-        <legend>
-          <h2 id="Services">
-            Services 
-          </h2>
-        </legend>
-
-        <ul class="ul2">
-          <li>
-            I offer Frontend development 
-          </li>
-          <li>
-            i offer Backend development 
-          </li>
-          <li>
-            i also offer Python classes 
-          </li>
-        </ul>
-      </fieldset>
+    </form>
   </main>
 </body>
 
