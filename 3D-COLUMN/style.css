@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+html {
+  /* Primary */
+  --orange: hsl(31, 77%, 52%);
+  --cyan: hsl(184, 100%, 22%);
+  --dark-cyan: hsl(179, 100%, 13%);
+
+  /* Neutral */
+  --white: hsla(0, 0%, 100%, 0.75);
+  --lightgray:  hsl(0, 0%, 95%);
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  display: flex;
+  place-content: center;
+  background-color: lightgray;
+  height: 100vh;
+}
+
+h1{
+  text-align: center;
+}
+
+h2 { 
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: lightgray;
+}
+
+p {
+  font-size: 15px;
+  margin: 25px 0 60px 0;
+  color: white;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+.Container {
+  display: flex;
+  width: 840px;
+  align-items: center;
+  justify-content: center;
+}
+
+.Box {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 32px;
+  align-items: flex-start;
+}
+
+.box1 {
+  background-color: orange;
+  border-radius:  10px 0 0 10px;
+}
+
+.box2 {
+  background-color: cyan;
+}
+
+.box3 {
+  background-color: darkcyan;
+  border-radius:  0 10px 10px 0;
+}
+
+button {
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-family: inherit;
+  font-size: 14;
+  border: solid 2px lightgray;
+  background: lightgray;
+  transition: all ease 0.5s;
+}
+
+.box1 button {
+  color: orange;
+}
+
+.box2 button {
+  color: cyan;
+}
+
+.box3 button {
+  color: darkcyan;
+}
+
+button:hover {
+  background: transparent;
+  color: lightgray;
+}
+
+.Logo {
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  p {
+    margin-bottom: 20px;
+  }
+
+  body {
+    height: auto;
+  }
+
+  main {
+    flex-direction: row;
+    margin: 16% 0;
+    padding: 8%;
+  }
+
+  .container {
+    padding: 38px 44px;
+  }
+
+  .box1 {
+    border-radius:  10px 10px 0 0;
+  }
+  
+  .box3 {
+    border-radius:  0 0 10px 10px;
+  }
+  
+}
+
+*,
+*::before,
+*::after {
+  border: 0;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+.Btn button{
+  background-color: cyan;
+  color: bisque;
+}
+
+
