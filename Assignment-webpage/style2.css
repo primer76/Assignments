@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    background: whitesmoke;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    background-color: #370617;
+}
+  
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
+  
+.logo {
+    width: 12%;
+    height: 8%;
+    float: left;
+    padding: 10px 0;
+}
+  
+header {
+   background: #d3d3d3; 
+}
+  
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+  
+nav {
+    float: right;
+}
+  
+nav li{
+    display: inline-block;
+    margin-left: 30px;
+    padding-top: 25px;
+  
+    position: relative;
+}
+  
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+  
+nav a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+  
+nav a:hover {
+    color: #000;
+}
+  
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #444;
+  
+    position: absolute;
+    top: 0;
+    width: 0%;
+  
+    transition: all ease-in-out 250ms;
+}
+  
+nav a:hover::before {
+    width: 100%;
+}
+  
+.container4 {
+    padding: 16px;
+}
+  
+input[type=text], input[type=password], textarea {
+    width: 97%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+  
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+  
+  
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+  
+  
+.SendButton{
+    background-color: #d3d3d3;
+    color: black;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+  
+.SendButton:hover {
+    opacity:1;
+}
+  
+h2 {
+    text-align: left;
+    font-family: 'Work Sans', sans-serif;
+    color: whitesmoke;
+    font-size: 50px;
+}
+  
+b, p {
+    font-size: 20px;
+    color: white;
+}
